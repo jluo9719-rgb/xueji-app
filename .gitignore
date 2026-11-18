@@ -1,0 +1,20 @@
+# 可重建的下载数据、隔离索引、日志、截图和评测报告。
+noim/
+.claude/
+.env
+data/
+dist/
+node_modules/
+_cred_out.txt
+_mk.json
+_mock_*.py
+_mock_*.txt
+_probe_*.py
+_probe_*.txt
+_server.log
+_sess*.json
+_set_cred.py
+node_modules/
+.env
+dist/
+build/

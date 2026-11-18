@@ -1,0 +1,8 @@
+{
+  "name": "学记个人学习备考助手",
+  "description": "个人学习备考助手：文档知识库问答、错题本沉淀与智能出题检测",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
