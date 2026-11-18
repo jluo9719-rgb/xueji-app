@@ -1,0 +1,28 @@
+{
+  "description": "基于 DuReader 调参集的人工诊断题；不参与门槛扫描，不宣称独立留出效果。",
+  "documents": [
+    {"key": "002630dd069fd6bcfe1a", "name": "地理_标准时间.md", "topic": "北京时间与时区"},
+    {"key": "02d5290ada6db2eda245", "name": "语文_将相和.md", "topic": "廉颇蔺相如将相和"},
+    {"key": "0376d765db5d56d35531", "name": "经济_边际报酬.md", "topic": "边际报酬递减规律"}
+  ],
+  "cases": [
+    {"category": "paraphrase", "question": "全国手机上统一显示的钟点，是按国际划分的哪一带来定的？", "expected": "answer", "terms": ["东八"]},
+    {"category": "paraphrase", "question": "报时采用的钟点，就是首都所在地太阳对应的地方时吗？", "expected": "answer", "terms": ["120", "不是"]},
+    {"category": "paraphrase", "question": "廉颇为什么看不惯蔺相如？是因为谁的职位更高吗？", "expected": "answer", "terms": ["官", "高"]},
+    {"category": "paraphrase", "question": "蔺相如遇到将军就让车掉头，是胆小还是另有考虑？", "expected": "answer", "terms": ["国家"]},
+    {"category": "paraphrase", "question": "别的条件都不动，只把一种生产投入一份份往上加，新增产出会一直一样多吗？", "expected": "answer", "terms": ["递减"]},
+    {"category": "paraphrase", "question": "经济课里说的边际收益递减，和边际报酬递减是两个不同的规律吗？", "expected": "answer", "terms": ["又称", "同"]},
+    {"category": "partial", "question": "北京时间采用哪个时区，国家授时中心2026年的采购预算是多少？", "expected": "partial", "absent_terms": ["2026", "采购预算"]},
+    {"category": "partial", "question": "报时钟组设在什么地方，目前对外出售的门票价格是多少？", "expected": "partial", "absent_terms": ["门票"]},
+    {"category": "partial", "question": "廉颇为何与蔺相如不和？廉颇生日的具体月日是什么？", "expected": "partial", "absent_terms": ["生日"]},
+    {"category": "partial", "question": "蔺相如为什么主动避让廉颇？蔺相如的母亲叫什么名字？", "expected": "partial", "absent_terms": ["母亲"]},
+    {"category": "partial", "question": "边际报酬递减规律是什么意思？海星工厂2026年的实际利润是多少？", "expected": "partial", "absent_terms": ["海星工厂"]},
+    {"category": "partial", "question": "理解边际报酬递减需要保持哪些条件不变？北岭公司上月的职工人数是多少？", "expected": "partial", "absent_terms": ["北岭公司"]},
+    {"category": "out_related", "question": "英国夏令时从每年的哪一个星期日开始？", "expected": "refuse", "absent_terms": ["英国"]},
+    {"category": "out_related", "question": "李白出生于公元哪一年？", "expected": "refuse", "absent_terms": ["李白"]},
+    {"category": "out_related", "question": "凯恩斯的流动性偏好理论包含哪三种货币需求动机？", "expected": "refuse", "absent_terms": ["凯恩斯"]},
+    {"category": "out_unrelated", "question": "光合作用的光反应在细胞中的哪里进行？", "expected": "refuse", "absent_terms": ["光合作用"]},
+    {"category": "out_unrelated", "question": "Python的生成器与列表推导式有什么区别？", "expected": "refuse", "absent_terms": ["Python"]},
+    {"category": "out_unrelated", "question": "太阳系中体积最大的行星是哪一颗？", "expected": "refuse", "absent_terms": ["行星"]}
+  ]
+}

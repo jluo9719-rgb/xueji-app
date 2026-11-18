@@ -1,0 +1,25 @@
+# 第一期重构依赖（在原项目环境基础上新增/明确版本）
+anthropic
+chromadb==1.5.7
+sentence-transformers==5.5.0
+rank_bm25==0.2.2
+jieba==0.42.1
+tiktoken
+pydantic>=2.0
+pymupdf4llm
+redis
+aiohttp
+requests
+python-dotenv
+pyyaml
+keyring>=25
+numpy
+fastapi
+uvicorn
+httpx
+python-multipart                   # FastAPI 文件上传（第五期）
+python-docx                        # Word 文档解析（第五期）
+
+# 重排输出依赖的已验证环境版本
+transformers==5.8.0
+torch==2.11.0

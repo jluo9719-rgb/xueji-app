@@ -1,0 +1,36 @@
+{"category": "in", "question": "Clone Agent 的逆向理解和正向生成分别指什么？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "in", "question": "web_url、source、documents 三类输入各能提供什么信息？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "in", "question": "第一阶段主要交付什么文件？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "in", "question": "VERIFIED 状态要求什么证据？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "in", "question": "GIVEN、WHEN、THEN 分别表示什么？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "in", "question": "importance 高的需求会最先生成吗？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "in", "question": "内部 key 和公开 id 有什么区别？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "in", "question": "规范化与校验有什么不同？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "in", "question": "JSONL 是什么格式，适合做什么？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "in", "question": "前端到 Clone API 和 Clone 到 OneBase API 有什么区别？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "paraphrase", "question": "这个项目把老系统变成新系统，中间经过哪两个方向的工作？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "paraphrase", "question": "只给一个网址的话，系统能看出什么，看不出什么？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "paraphrase", "question": "探索做完之后产出的那份需求文件叫什么？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "paraphrase", "question": "一个需求节点什么情况下才算真正验证过？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "paraphrase", "question": "验收场景里的前提、动作、结果三段式是怎么写的？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "paraphrase", "question": "打了 5 分的需求是不是一定排在前面被处理？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "paraphrase", "question": "需求编号 REQ-1.1 这种是怎么来的，会不会变？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "paraphrase", "question": "自动补全旧格式和检查格式合不合规是一回事吗？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "paraphrase", "question": "一行一个对象的那种日志文件格式有什么用？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "paraphrase", "question": "有预览链接就说明应用建好了吗？", "expected": "answer", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "partial", "question": "VERIFIED 状态要求什么证据？它在 Jira 里对应哪个工作流状态？", "expected": "partial", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "partial", "question": "requirements.yaml 是什么？它和 OpenAPI 规范文件的字段有何对应关系？", "expected": "partial", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "partial", "question": "OneBase 是什么平台？它的商业授权价格是多少？", "expected": "partial", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "partial", "question": "GIVEN/WHEN/THEN 有什么用？Cucumber 框架如何执行它们？", "expected": "partial", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "partial", "question": "Clone Agent 和 RPA 有什么区别？UiPath 的许可证怎么收费？", "expected": "partial", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "partial", "question": "JSON 和 YAML 的区别是什么？TOML 格式又有什么特点？", "expected": "partial", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "out_near", "question": "LangChain 的 AgentExecutor 如何配置工具？", "expected": "refuse", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "out_near", "question": "Kubernetes 的 Pod 和 Deployment 有什么区别？", "expected": "refuse", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "out_near", "question": "React 的 useEffect 钩子什么时候执行？", "expected": "refuse", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "out_near", "question": "MySQL 的事务隔离级别有哪几种？", "expected": "refuse", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "out_near", "question": "Selenium 如何定位页面元素？", "expected": "refuse", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "out_far", "question": "我国宪法规定的公民基本权利有哪些？", "expected": "refuse", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "out_far", "question": "牛顿第二定律的公式是什么？", "expected": "refuse", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "out_far", "question": "红烧肉怎么做才不腻？", "expected": "refuse", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "out_far", "question": "光合作用的光反应发生在哪里？", "expected": "refuse", "expected_section": null, "document": "1a6a9ab785a4.md"}
+{"category": "out_far", "question": "2024 年奥运会在哪个城市举办？", "expected": "refuse", "expected_section": null, "document": "1a6a9ab785a4.md"}

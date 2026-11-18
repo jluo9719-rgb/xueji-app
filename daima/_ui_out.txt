@@ -1,0 +1,28 @@
+=== 1. POST /chat (SSE) ===
+HTTP 200
+status 事件序列: ['memory', 'tools', 'thinking', 'tool_call', 'tool_result', 'reflect', 'reflect_retry', 'thinking', 'tool_call', 'tool_result', 'reflect', 'reflect_retry', 'thinking', 'tool_call', 'tool_result', 'thinking', 'tool_call', 'tool_result', 'thinking', 'mistake', 'done']
+    tool_call -> 第 1 轮：multi_retrieve
+    reflect -> 审核检索结果是否足够…
+    reflect_retry -> 资料不足（第 1 次），用新线索再查：内部监督的要素包括哪些
+    tool_call -> 第 2 轮：multi_retrieve, multi_retrieve
+    reflect -> 审核检索结果是否足够…
+    reflect_retry -> 资料不足（第 2 次），用新线索再查：内部监督包括日常监督专项监督内部控制缺陷自我评价等要素
+    tool_call -> 第 3 轮：multi_retrieve, multi_retrieve
+    tool_call -> 第 4 轮：multi_retrieve, multi_retrieve
+    mistake -> 分析是否收录错题本…
+answer 长度: 809
+answer 前 120 字: 根据检索到的文档内容，结合你提到的线索，可以这样理解“内部监督”：  ## 一、文档中的总体定位  公司的内控手册将内部控制划分为**五个方面（五要素）**：内部环境、风险评估、控制活动、信息与沟通、**内部监督**。其中，内部监督是保证其
+error: None
+
+=== 2. GET /sessions/s_ui_test/messages ===
+消息条数: 14 | 角色序列: ['user', 'assistant', 'user', 'assistant', 'user', 'user', 'user', 'assistant', 'user', 'user', 'assistant', 'user', 'user', 'assistant']
+最后一条是 assistant 且内容一致: True
+
+=== 3. GET /sessions（标题改名 + updated_at） ===
+title: 内部监督包括哪几个要素？ | user_turns: 1
+created_at: 2026-09-20 20:17:09 | updated_at: 2026-09-20 20:17:09
+
+=== 4. GET /sessions/default/messages（默认会话 404 分支） ===
+default 会话存在，返回 200
+
+ALL PASS

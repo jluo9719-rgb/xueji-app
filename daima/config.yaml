@@ -1,0 +1,51 @@
+# ============================================================
+# 学记个人学习备考助手 — 全局配置
+# 注意：密钥不放这里！统一走 Windows 凭据管理器（core/credentials.py）
+# ============================================================
+
+llm:
+  provider: "ollama"           # ollama 本地模式；anthropic 为兼容协议云服务
+  base_url: "http://localhost:11434"
+  model: "qwen3:8b"
+  thinking: false              # 本地模型关闭思考以降低延迟；云端不传此参数
+  retries: 1                   # 总尝试次数；本地默认不重复等待
+  chat_timeout: 300            # 整轮问答预算（秒），含工具与辅助调用
+  max_tokens_answer: 4000       # 正式回答的 max_tokens（推理模型思考也占额度，留足余量）
+  max_tokens_util: 1200         # 拆解/改写/总结等辅助调用（同上，思考块会吃掉额度）
+  llm_timeout: 120              # 单次调用超时（秒）；推理模型首字慢，原 60s 偏紧
+
+retrieval:
+  evidence_min_score: 0.12           # Sigmoid 0~1 候选相关性预筛；高分不代表有答案，见 tests/eval/README.md
+  context_rewrite: true             # 有历史对话时，先把追问补全为独立问题再检索（代词消解）
+  answerability_check: false        # 实验性额外依据核对；当前模型对换表达/部分覆盖误拒较多，默认关闭
+  chunk_max_chars: 800              # 单块最大字符数（含标题路径）
+  vector_top_k: 8                   # 向量检索取 Top K
+  bm25_top_k: 5                     # BM25 检索取 Top K
+  rerank_top_n: 5                   # 重排后保留数
+
+embedding:
+  model: "moka-ai/m3e-base"
+  hf_endpoint: "https://hf-mirror.com"   # HF 直连不稳时走镜像；用户自设 HF_ENDPOINT 环境变量则优先
+
+rerank:
+  model: "BAAI/bge-reranker-large"
+
+storage:
+  # 以下路径若为相对路径，均相对于项目根目录（daima/）
+  chroma_path: "./chroma_db"
+  cache_dir: "../noim/cache"        # 可重建缓存；原 cache 目录保留不删除
+  sessions_db: "./data/sessions.db" # 聊天、标题、归档状态的主存储
+  sqlite_path: "./entity_memory.db"
+  mistakes_db: "./data/mistakes.db" # 错题本（第六期）
+  data_dir: "./data"                # 知识库上传原件 + 注册表（第五期）
+
+redis:
+  host: "localhost"
+  port: 6380
+  socket_timeout: 5
+  enabled: false                    # 当前单机版本使用 SQLite，停用无读取用途的镜像
+
+logging:
+  level: "INFO"
+  dir: "../noim/logs"               # 可删除日志放在 one_project/noim
+

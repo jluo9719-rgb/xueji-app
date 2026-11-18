@@ -1,0 +1,13 @@
+# 密钥与敏感文件 —— 永不入库（.env.example 是模板，允许入库）
+.env
+*.env
+!.env.example
+
+# 运行时产物
+cache/
+chroma_db/
+logs/
+entity_memory.db
+data/
+__pycache__/
+*.pyc
